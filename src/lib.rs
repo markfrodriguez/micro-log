@@ -66,7 +66,7 @@ pub fn init_with_level(level: Level) -> Result<(), SetLoggerError> {
 /// # }
 /// ```
 pub fn init() -> Result<(), SetLoggerError> {
-    init_with_level(Level::Trace)
+    init_with_level(Level::Info)
 }
 
 #[cfg(test)]
