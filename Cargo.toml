@@ -1,0 +1,9 @@
+[package]
+name = "micro_log"
+version = "0.1.0"
+authors = ["Mark F Rodriguez <mark@markfrodriguez.com>"]
+edition = "2018"
+
+[dependencies]
+log = { version = "^0.4", default-features = false }
+libc-print = "~0.1"
