@@ -26,6 +26,8 @@ impl Log for MicroLog {
     fn log(&self, record: &Record) {
         if self.enabled(record.metadata()) {
             println!("{} - {}", record.level(), record.args());
+            // ensure clean output in raw console mode
+            print!("\r");
         }
     }
 
